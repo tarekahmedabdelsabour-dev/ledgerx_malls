@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mall",
+  "date",
+  "entrance",
+  "visitors",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "mall",
+   "fieldtype": "Link",
+   "label": "Mall",
+   "options": "Mall",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "entrance",
+   "fieldtype": "Data",
+   "label": "Entrance / Counter",
+   "default": "Main"
+  },
+  {
+   "fieldname": "visitors",
+   "fieldtype": "Int",
+   "label": "Visitors",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Footfall",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Mall Operations",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Leasing Officer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "hash",
+ "icon": "fa fa-users",
+ "allow_rename": 0
+}

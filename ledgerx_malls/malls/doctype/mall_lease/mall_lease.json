@@ -1,0 +1,334 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mall",
+  "tenant",
+  "trade_name",
+  "cb1",
+  "start_date",
+  "end_date",
+  "lease_status",
+  "sb_u",
+  "units",
+  "total_area",
+  "sb_r",
+  "rent_model",
+  "rent_basis",
+  "rent_amount",
+  "base_rent",
+  "cb2",
+  "rent_escalation_pct",
+  "turnover_pct",
+  "sb_c",
+  "service_per_sqm",
+  "service_escalation_pct",
+  "cb3",
+  "marketing_pct",
+  "recover_cam",
+  "sb_f",
+  "free_periods",
+  "sb_d",
+  "security_deposit",
+  "deposit_status",
+  "sb_e",
+  "terminated_on",
+  "termination_reason",
+  "renewed_from",
+  "company",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "mall",
+   "fieldtype": "Link",
+   "label": "Mall",
+   "options": "Mall",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "Tenant",
+   "options": "Mall Tenant",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "label": "Brand",
+   "read_only": 1,
+   "fetch_from": "tenant.trade_name",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Lease Start",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Lease End",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "lease_status",
+   "fieldtype": "Select",
+   "label": "Lease Status",
+   "options": "Upcoming\nActive\nExpired\nTerminated",
+   "default": "Upcoming",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "sb_u",
+   "fieldtype": "Section Break",
+   "label": "Units"
+  },
+  {
+   "fieldname": "units",
+   "fieldtype": "Table",
+   "label": "Units",
+   "options": "Lease Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Float",
+   "label": "Total Area (sqm)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_r",
+   "fieldtype": "Section Break",
+   "label": "Rent"
+  },
+  {
+   "fieldname": "rent_model",
+   "fieldtype": "Select",
+   "label": "Rent Model",
+   "options": "Fixed\nPercentage of Sales\nHigher of Fixed and Percentage",
+   "default": "Fixed",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "rent_basis",
+   "fieldtype": "Select",
+   "label": "Rent Is Entered",
+   "options": "Per sqm per Month\nFixed Amount per Month",
+   "default": "Per sqm per Month",
+   "depends_on": "eval:doc.rent_model!='Percentage of Sales'"
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount",
+   "depends_on": "eval:doc.rent_model!='Percentage of Sales'"
+  },
+  {
+   "fieldname": "base_rent",
+   "fieldtype": "Currency",
+   "label": "Base Rent per Month",
+   "read_only": 1,
+   "description": "Before escalation and free periods."
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rent_escalation_pct",
+   "fieldtype": "Percent",
+   "label": "Yearly Rent Increase %",
+   "description": "Applied on every lease anniversary."
+  },
+  {
+   "fieldname": "turnover_pct",
+   "fieldtype": "Percent",
+   "label": "Percentage of Sales %",
+   "depends_on": "eval:doc.rent_model!='Fixed'",
+   "mandatory_depends_on": "eval:doc.rent_model!='Fixed'"
+  },
+  {
+   "fieldname": "sb_c",
+   "fieldtype": "Section Break",
+   "label": "Service Charge and Marketing"
+  },
+  {
+   "fieldname": "service_per_sqm",
+   "fieldtype": "Currency",
+   "label": "Service Charge per sqm per Month"
+  },
+  {
+   "fieldname": "service_escalation_pct",
+   "fieldtype": "Percent",
+   "label": "Yearly Service Charge Increase %"
+  },
+  {
+   "fieldname": "cb3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marketing_pct",
+   "fieldtype": "Percent",
+   "label": "Marketing Fund % of Base Rent"
+  },
+  {
+   "fieldname": "recover_cam",
+   "fieldtype": "Check",
+   "label": "Takes Part in Expense Recovery",
+   "default": 1,
+   "description": "Share of the common-area expenses allocated by area."
+  },
+  {
+   "fieldname": "sb_f",
+   "fieldtype": "Section Break",
+   "label": "Rent-free Periods (fit-out and incentives)"
+  },
+  {
+   "fieldname": "free_periods",
+   "fieldtype": "Table",
+   "label": "Rent-free Periods",
+   "options": "Lease Free Period"
+  },
+  {
+   "fieldname": "sb_d",
+   "fieldtype": "Section Break",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Currency",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "deposit_status",
+   "fieldtype": "Select",
+   "label": "Deposit Status",
+   "options": "Pending\nReceived\nRefunded\nForfeited",
+   "default": "Pending"
+  },
+  {
+   "fieldname": "sb_e",
+   "fieldtype": "Section Break",
+   "label": "End of Lease"
+  },
+  {
+   "fieldname": "terminated_on",
+   "fieldtype": "Date",
+   "label": "Terminated On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "termination_reason",
+   "fieldtype": "Small Text",
+   "label": "Termination Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "renewed_from",
+   "fieldtype": "Link",
+   "label": "Renewal Of",
+   "options": "Mall Lease",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "fetch_from": "mall.company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Mall Lease",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Mall Lease",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Leasing Officer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Mall Operations",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:LSE-.YYYY.-.#####",
+ "title_field": "trade_name",
+ "icon": "fa fa-file-text-o",
+ "is_submittable": 1,
+ "track_changes": 1,
+ "allow_rename": 0
+}

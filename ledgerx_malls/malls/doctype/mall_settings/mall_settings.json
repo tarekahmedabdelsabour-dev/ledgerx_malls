@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "sales_taxes_template",
+  "invoice_due_days",
+  "sb_items",
+  "rent_item",
+  "service_item",
+  "marketing_item",
+  "utility_item",
+  "turnover_item",
+  "cam_item",
+  "late_fee_item",
+  "sb_late",
+  "late_fee_grace_days",
+  "late_fee_pct_month",
+  "sb_sales",
+  "turnover_needs_verified",
+  "sb_alerts",
+  "expiry_alert_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "sales_taxes_template",
+   "fieldtype": "Link",
+   "label": "Sales Taxes Template",
+   "options": "Sales Taxes and Charges Template",
+   "description": "Added to every rent invoice. Leave empty when not taxed."
+  },
+  {
+   "fieldname": "invoice_due_days",
+   "fieldtype": "Int",
+   "label": "Invoice Due After (days)",
+   "default": 7
+  },
+  {
+   "fieldname": "sb_items",
+   "fieldtype": "Section Break",
+   "label": "Billing Items"
+  },
+  {
+   "fieldname": "rent_item",
+   "fieldtype": "Link",
+   "label": "Rent Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "service_item",
+   "fieldtype": "Link",
+   "label": "Service Charge Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "marketing_item",
+   "fieldtype": "Link",
+   "label": "Marketing Fund Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "utility_item",
+   "fieldtype": "Link",
+   "label": "Utilities Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "turnover_item",
+   "fieldtype": "Link",
+   "label": "Turnover Rent Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cam_item",
+   "fieldtype": "Link",
+   "label": "Expense Recovery Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "late_fee_item",
+   "fieldtype": "Link",
+   "label": "Late Fee Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "sb_late",
+   "fieldtype": "Section Break",
+   "label": "Late Payment"
+  },
+  {
+   "fieldname": "late_fee_grace_days",
+   "fieldtype": "Int",
+   "label": "Grace Days Before a Late Fee",
+   "default": 5
+  },
+  {
+   "fieldname": "late_fee_pct_month",
+   "fieldtype": "Percent",
+   "label": "Late Fee % per Month",
+   "default": 0,
+   "description": "0 = no late fees."
+  },
+  {
+   "fieldname": "sb_sales",
+   "fieldtype": "Section Break",
+   "label": "Tenant Sales"
+  },
+  {
+   "fieldname": "turnover_needs_verified",
+   "fieldtype": "Check",
+   "label": "Turnover Rent Only on Verified Sales",
+   "default": 1,
+   "description": "Declared sales that nobody checked are left out of the invoice and flagged."
+  },
+  {
+   "fieldname": "sb_alerts",
+   "fieldtype": "Section Break",
+   "label": "Alerts"
+  },
+  {
+   "fieldname": "expiry_alert_days",
+   "fieldtype": "Int",
+   "label": "Warn About Leases Ending Within (days)",
+   "default": 180
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Mall Settings",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Leasing Officer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "icon": "fa fa-building",
+ "issingle": 1,
+ "allow_rename": 0
+}

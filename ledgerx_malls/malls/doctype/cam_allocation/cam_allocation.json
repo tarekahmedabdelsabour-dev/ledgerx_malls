@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mall",
+  "from_date",
+  "to_date",
+  "cb1",
+  "total_expense",
+  "landlord_bears_vacant",
+  "sb_l",
+  "lines",
+  "landlord_share",
+  "status",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "mall",
+   "fieldtype": "Link",
+   "label": "Mall",
+   "options": "Mall",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_expense",
+   "fieldtype": "Currency",
+   "label": "Expenses to Recover",
+   "reqd": 1,
+   "in_list_view": 1,
+   "description": "Type it, or press Load Expenses to read the mall's expense accounts."
+  },
+  {
+   "fieldname": "landlord_bears_vacant",
+   "fieldtype": "Check",
+   "label": "Landlord Bears the Vacant Space",
+   "default": 1
+  },
+  {
+   "fieldname": "sb_l",
+   "fieldtype": "Section Break",
+   "label": "Allocation"
+  },
+  {
+   "fieldname": "lines",
+   "fieldtype": "Table",
+   "label": "Allocation",
+   "options": "CAM Line"
+  },
+  {
+   "fieldname": "landlord_share",
+   "fieldtype": "Currency",
+   "label": "Landlord Share (vacant space)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nAllocated\nBilled",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "fetch_from": "mall.company"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "CAM Allocation",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:CAM-.YYYY.-.#####",
+ "icon": "fa fa-pie-chart",
+ "track_changes": 1,
+ "allow_rename": 0
+}

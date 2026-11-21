@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lease",
+  "month",
+  "gross_sales",
+  "returns",
+  "net_sales",
+  "cb1",
+  "status",
+  "evidence",
+  "sb_l",
+  "mall",
+  "tenant",
+  "total_area",
+  "sales_per_sqm"
+ ],
+ "fields": [
+  {
+   "fieldname": "lease",
+   "fieldtype": "Link",
+   "label": "Lease",
+   "options": "Mall Lease",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Date",
+   "label": "Month",
+   "reqd": 1,
+   "in_list_view": 1,
+   "description": "Any day of the month."
+  },
+  {
+   "fieldname": "gross_sales",
+   "fieldtype": "Currency",
+   "label": "Gross Sales",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "returns",
+   "fieldtype": "Currency",
+   "label": "Returns and Cancellations"
+  },
+  {
+   "fieldname": "net_sales",
+   "fieldtype": "Currency",
+   "label": "Net Sales",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Declared\nVerified",
+   "default": "Declared",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "description": "Only a manager or an accountant can mark sales as verified."
+  },
+  {
+   "fieldname": "evidence",
+   "fieldtype": "Small Text",
+   "label": "How It Was Checked"
+  },
+  {
+   "fieldname": "sb_l",
+   "fieldtype": "Section Break",
+   "label": "Lease"
+  },
+  {
+   "fieldname": "mall",
+   "fieldtype": "Link",
+   "label": "Mall",
+   "options": "Mall",
+   "read_only": 1,
+   "fetch_from": "lease.mall"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "Tenant",
+   "options": "Mall Tenant",
+   "read_only": 1,
+   "fetch_from": "lease.tenant"
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Float",
+   "label": "Area (sqm)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_per_sqm",
+   "fieldtype": "Currency",
+   "label": "Sales per sqm",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Tenant Sales",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Leasing Officer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Mall Operations",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:TSL-.YYYY.-.#####",
+ "icon": "fa fa-line-chart",
+ "allow_rename": 0
+}

@@ -1,0 +1,364 @@
+% of Sales,% من المبيعات
+"0 = ground, -1 = basement.",0 = الدور الأرضي، -1 = البدروم.
+0 = no late fees.,0 = بدون غرامة تأخير.
+1 - 30 days,1 - 30 يوم
+31 - 60 days,31 - 60 يوم
+61 - 90 days,61 - 90 يوم
+A tenant whose occupancy cost is above about 15% of sales is usually under strain; far below 8% may mean the rent is too low.,المستأجر اللي تكلفة إشغاله فوق حوالي 15% من مبيعاته غالباً مضغوط؛ وأقل بكتير من 8% ممكن يعني إن الإيجار منخفض.
+Action,الإجراء
+Actions,إجراءات
+Active,نشط
+Active leases: monthly fixed rent {0} over {1} sqm. Weighted average lease expiry: {2} years.,العقود السارية: إيجار ثابت شهري {0} على {1} م². متوسط مدة بقاء العقود مرجحاً: {2} سنة.
+Add Expense Recovery Not Yet Billed,أضف استرداد المصاريف غير المفوتر
+Add Late Fees,أضف غرامات التأخير
+Add Meter Readings Not Yet Billed,أضف قراءات العدادات غير المفوترة
+Add Turnover Rent of the Previous Month,أضف إيجار النسبة من مبيعات الشهر السابق
+Add at least one unit,أضف وحدة واحدة على الأقل
+Added to every rent invoice. Leave empty when not taxed.,تُضاف لكل فاتورة إيجار. اتركها فاضية لو غير خاضعة للضريبة.
+Address,العنوان
+Air Conditioning,تكييف
+Alerts,التنبيهات
+All,الكل
+All Verified,الكل موثق
+Allocate,وزّع
+Allocated,تم التوزيع
+Allocation,التوزيع
+Amended From,معدّل من
+Amount,المبلغ
+Amounts cannot be negative,المبالغ لا يمكن أن تكون بالسالب
+Analysis,تحليل
+Anchor Store,محل رئيسي (Anchor)
+Any day of the month.,أي يوم في الشهر.
+Any day of the month: rent and service charge are billed for this month.,أي يوم في الشهر: الإيجار ومصاريف الخدمات بتتفوتر لهذا الشهر.
+Applied on every lease anniversary.,تُطبق عند كل ذكرى سنوية للعقد.
+Applies To,ينطبق على
+Area (sqm),المساحة (م²)
+As of,حتى تاريخ
+Asking Rent per sqm per Month,الإيجار المطلوب للمتر في الشهر
+Base Rent per Month,الإيجار الأساسي الشهري
+Before escalation and free periods.,قبل الزيادة وفترات السماح.
+Bill,فوتر
+Billed,مفوتر
+Billing,الفوترة
+Billing Items,أصناف الفوترة
+Billing Line,بند فوترة
+Billing Month,شهر الفوترة
+Billing Runs to Invoice,دورات فوترة تنتظر الفواتير
+Billing and Collection,الفوترة والتحصيل
+Brand,الماركة
+Brand / Trade Name,العلامة / الاسم التجاري
+CAM Allocation,توزيع مصاريف الخدمات
+CAM Line,بند توزيع
+CAM Reconciliation,تسوية مصاريف الخدمات
+Category,الفئة
+Charge,البند
+Charges,الرسوم
+Choose the months,اختار الشهور
+City,المدينة
+Collected,محصّل
+Collection %,نسبة التحصيل
+Commercial Register No.,رقم السجل التجاري
+Company,الشركة
+Consumption,الاستهلاك
+Contact Person,الشخص المسؤول
+Cost Center,مركز التكلفة
+Create,إنشاء
+Create Draft Renewal,إنشاء تجديد مسودة
+Create Invoices,إنشاء الفواتير
+"Create a customer group and a territory first, or choose the customer account yourself",أنشئ مجموعة عملاء ومنطقة أولاً، أو اختار حساب العميل بنفسك
+Create one draft invoice per lease for the ticked lines?,إنشاء فاتورة مسودة لكل عقد للبنود المحددة؟
+Current Lease,العقد الحالي
+Current Tenant,المستأجر الحالي
+Customer,العميل
+Customer Account,حساب العميل
+Date,التاريخ
+Days Left,الأيام المتبقية
+Decide: renew or re-let,قرر: تجديد أو تأجير جديد
+Declared,مُعلن
+Declared sales that nobody checked are left out of the invoice and flagged.,المبيعات المعلنة اللي محدش راجعها بتتساب برة الفاتورة وبتتعلّم.
+Deposit Status,حالة التأمين
+Description,الوصف
+Draft,مسودة
+Electricity,كهرباء
+Electronics,إلكترونيات
+Email,البريد الإلكتروني
+Employee,الموظف
+End,انتهاء
+End of Lease,نهاية العقد
+Ending Within (days),ينتهي خلال (يوم)
+Ends,ينتهي
+Enter Sales,إدخال المبيعات
+Enter the expenses to recover first,أدخل المصاريف المطلوب استردادها أولاً
+Enter the percentage of sales,أدخل نسبة المبيعات
+Enter the rent amount,أدخل قيمة الإيجار
+Entertainment,ترفيه
+Entrance / Counter,المدخل / العداد
+Expense Recovery,استرداد المصاريف
+Expense Recovery Item,صنف استرداد المصاريف
+Expenses cannot be negative,المصاريف لا يمكن أن تكون بالسالب
+Expenses to Recover,المصاريف المطلوب استردادها
+Expired,منتهي
+Fashion,أزياء
+Fit-out,تجهيز
+Fixed,ثابت
+Fixed Amount per Month,مبلغ ثابت في الشهر
+Floor,الدور
+Floor {0} belongs to another mall,الدور {0} تابع لمول آخر
+Food and Beverage,مطاعم ومشروبات
+Footfall,حركة الزوار
+Footfall and Sales,الزوار والمبيعات
+Forfeited,مصادَر
+Former,سابق
+From,من
+From Month,من شهر
+Gas,غاز
+Grace Days Before a Late Fee,أيام السماح قبل غرامة التأخير
+Gross Sales,إجمالي المبيعات
+Group,مجموعة
+Group By,تجميع حسب
+Guarantee,الضمان
+Guarantor,الضامن
+Health and Beauty,صحة وجمال
+Higher of Fixed and Percentage,الأعلى من الثابت والنسبة
+Home,الرئيسية
+Home and Furniture,منزل وأثاث
+How It Was Checked,كيف تم التحقق
+Include Expired and Terminated,تضمين المنتهي والمفسوخ
+Income and costs of this mall are reported here.,إيرادات وتكاليف هذا المول بتظهر على هذا المركز.
+Invoice Date,تاريخ الفاتورة
+Invoice Due After (days),استحقاق الفاتورة بعد (يوم)
+Invoiced,تم إصدار فاتورة
+Invoices,الفواتير
+Invoices Created,الفواتير المنشأة
+Invoices go to this customer. Created automatically when left empty.,الفواتير بتروح لهذا العميل. بيتنشأ تلقائياً لو تُرك فاضي.
+Item,بند
+Kiosk,كشك
+Landlord Bears the Vacant Space,المالك يتحمل المساحة الشاغرة
+Landlord Share (vacant space),حصة المالك (مساحة شاغرة)
+Last Day of the Lease,آخر يوم في العقد
+Late Fee,غرامة تأخير
+Late Fee % per Month,غرامة التأخير % شهرياً
+Late Fee Item,صنف غرامة التأخير
+Late Payment,التأخر في السداد
+Late fee on {0} through {1},غرامة تأخير على {0} حتى {1}
+Lease,التأجير
+Lease End,نهاية العقد
+Lease Expiry,انتهاء العقود
+Lease Free Period,فترة سماح
+Lease Start,بداية العقد
+Lease Status,حالة العقد
+Lease Unit,وحدة العقد
+Lease {0} ({1}) ends on {2}: renew or plan the next tenant.,العقد {0} ({1}) ينتهي في {2}: جدد أو جهّز المستأجر التالي.
+Leases Active,عقود سارية
+Leases Ending in 6 Months,عقود تنتهي خلال 6 شهور
+Leases by Rent Model,العقود حسب نموذج الإيجار
+Leasing,التأجير
+Leasing Officer,مسؤول التأجير
+Legal Name,الاسم القانوني
+Level No.,رقم الدور
+Load Expenses,تحميل المصاريف
+Maintenance,صيانة
+Mall,المول
+Mall Accountant,محاسب المول
+Mall Billing Run,دورة فوترة المول
+Mall Billing Runs,دورات فوترة المول
+Mall Category,فئة المحل
+Mall Floor,دور المول
+Mall Lease,عقد إيجار مول
+Mall Manager,مدير المول
+Mall Name,اسم المول
+Mall Operations,تشغيل المول
+Mall Settings,إعدادات المولات
+Mall Tenant,مستأجر مول
+Mall Unit,وحدة مول
+Mall billing run {0},دورة فوترة المول {0}
+Mall {0} is not active,المول {0} غير نشط
+Malls,المولات
+Manager User,مستخدم المدير
+Marketing Fund,صندوق التسويق
+Marketing Fund % of Base Rent,صندوق التسويق % من الإيجار الأساسي
+Marketing Fund Item,صنف صندوق التسويق
+Marketing fund {0}% of rent {1},صندوق التسويق {0}% من إيجار {1}
+Meter,العداد
+Meter No.,رقم العداد
+Meter Reading,قراءة عداد
+Meter {0} is not active,العداد {0} غير نشط
+Month,الشهر
+Month to Bill,شهر الفوترة
+Months Reported,شهور مُبلّغ عنها
+Multiplier,المعامل
+Net Sales,صافي المبيعات
+New Billing Run,دورة فوترة جديدة
+New Term (years),المدة الجديدة (سنة)
+No lease is in force in {0}.,لا يوجد عقد ساري في {0}.
+"No lease is in force on this unit at that date, so the amount stays with the landlord.",لا يوجد عقد ساري على هذه الوحدة في هذا التاريخ، فالمبلغ يبقى على المالك.
+Not Due,غير مستحق
+Note,ملاحظة
+Notes,ملاحظات
+Nothing is ticked to bill,لم يتم تحديد أي بند للفوترة
+Occupancy,الإشغال
+Occupancy %,نسبة الإشغال %
+Occupancy Cost % of Sales,تكلفة الإشغال % من المبيعات
+Occupied,مشغول
+Occupied (sqm),المشغول (م²)
+Occupied Area (sqm),المساحة المشغولة (م²)
+Occupied and Fit-out follow the lease: create a lease for this unit instead,مشغول وتجهيز بيتبعوا العقد: أنشئ عقد لهذه الوحدة بدلاً من كده
+Occupied and Fit-out follow the lease; the rest you set.,مشغول وتجهيز بيتبعوا العقد؛ والباقي أنت اللي تحدده.
+Oldest (days overdue),الأقدم (أيام التأخير)
+On Hold,موقوف
+Only a mall manager or accountant can mark sales as verified,مدير المول أو المحاسب فقط يقدر يوثق المبيعات
+Only a manager or an accountant can mark sales as verified.,المدير أو المحاسب فقط يقدر يوثق المبيعات.
+Only a submitted lease can be terminated,العقد المعتمد فقط يمكن فسخه
+Opening Date,تاريخ الافتتاح
+Opening Reading,قراءة الافتتاح
+Operations,التشغيل
+Other,أخرى
+Over 90 days,أكثر من 90 يوم
+Payment Entry,قيد دفع
+Pending,قيد الانتظار
+Per sqm per Month,للمتر في الشهر
+Percentage of Sales,نسبة من المبيعات
+Percentage of Sales %,نسبة المبيعات %
+Phone,الهاتف
+Prepare Charges,تجهيز البنود
+Prepare the run first,جهّز الدورة أولاً
+Prepared,تم التجهيز
+Previous Reading,القراءة السابقة
+Price per Unit,السعر للوحدة
+Reading,القراءة
+Reading Date,تاريخ القراءة
+Reason,السبب
+Received,مستلم
+Refunded,مُسترد
+Renew,تجديد
+Renew the Lease,تجديد العقد
+Renewal,التجديد
+Renewal Of,تجديد لـ
+Renewal drafted,تم تجهيز تجديد
+Rent,إيجار
+Rent Amount,قيمة الإيجار
+Rent Increase %,نسبة زيادة الإيجار
+Rent Is Entered,الإيجار مُدخل
+Rent Item,صنف الإيجار
+Rent Lost per Month at Asking Price,إيجار ضائع شهرياً بالسعر المطلوب
+Rent Model,نموذج الإيجار
+Rent Roll,كشف الإيجارات
+Rent This Month,إيجار هذا الشهر
+Rent per sqm,الإيجار للمتر
+Rent {0},إيجار {0}
+Rent-free Periods,فترات السماح
+Rent-free Periods (fit-out and incentives),فترات السماح (تجهيز وحوافز)
+Rent-free row {0} falls outside the lease dates,صف السماح {0} خارج تواريخ العقد
+Rent-free row {0}: the end is before the start,صف السماح {0}: النهاية قبل البداية
+Reported Net Sales,صافي المبيعات المُبلّغ عنها
+Reports,التقارير
+Reserved,محجوز
+Result,النتيجة
+Returns and Cancellations,المرتجعات والإلغاءات
+Returns cannot be more than the gross sales,المرتجعات لا يمكن أن تزيد عن إجمالي المبيعات
+"Review the lines, then create the invoices.",راجع البنود ثم أنشئ الفواتير.
+Run,الدورة
+Sales Awaiting Verification,مبيعات تنتظر التوثيق
+Sales Invoice,فاتورة مبيعات
+Sales Taxes Template,قالب ضريبة المبيعات
+Sales for {0} were already entered in {1},مبيعات {0} اتسجلت بالفعل في {1}
+Sales not verified yet,المبيعات لم تُوثق بعد
+Sales per Visitor,المبيعات للزائر
+Sales per sqm,المبيعات للمتر
+Sales per sqm of Mall,المبيعات لمتر المول
+Sales per sqm per Month,المبيعات للمتر في الشهر
+Security Deposit,تأمين
+Service Charge,مصاريف خدمات
+Service Charge Item,صنف مصاريف الخدمات
+Service Charge and Marketing,مصاريف الخدمات والتسويق
+Service Charge per sqm per Month,مصاريف الخدمات للمتر في الشهر
+Service charge {0},مصاريف خدمات {0}
+Services,خدمات
+Set a cost center on the mall first,حدد مركز تكلفة للمول أولاً
+Set the {0} in Mall Settings,حدد {0} في إعدادات المولات
+Setup,الإعداد
+Share %,الحصة %
+Share of common-area expenses ({0}),حصة من مصاريف المناطق المشتركة ({0})
+Share of the common-area expenses allocated by area.,حصة من مصاريف المناطق المشتركة بتتوزع بالمساحة.
+Source,المصدر
+Source Data,بيانات المصدر
+Start,بداية
+Status,الحالة
+Still Open,لسه مفتوح
+Submit Invoices,اعتماد الفواتير
+Submit all the draft invoices of this run?,اعتماد كل الفواتير المسودة لهذه الدورة؟
+Supermarket,سوبر ماركت
+Takes Part in Expense Recovery,يشارك في استرداد المصاريف
+Tax ID,الرقم الضريبي
+Tenant,مستأجر
+Tenant Aging,أعمار ديون المستأجرين
+Tenant Sales,مبيعات المستأجرين
+Tenant Sales Performance,أداء مبيعات المستأجرين
+Tenant {0} has no customer account,المستأجر {0} ليس له حساب عميل
+Tenant {0} is marked Former,المستأجر {0} مُعلّم كسابق
+Tenants Reporting Sales,مستأجرون أبلغوا عن المبيعات
+Terminate,فسخ
+Terminate the Lease,فسخ العقد
+Terminated,مفسوخ
+Terminated On,تاريخ الفسخ
+Termination Reason,سبب الفسخ
+The area must be more than zero,المساحة لازم تكون أكبر من صفر
+The lease must be submitted first,لازم العقد يكون معتمد أولاً
+The lease must end after it starts,يجب أن ينتهي عقد الإيجار بعد تاريخ بدايته
+The period ends before it starts,الفترة تنتهي قبل أن تبدأ
+"The reading cannot be lower than the previous one ({0}). If the meter was replaced, set a new meter.",القراءة لا يمكن أن تكون أقل من السابقة ({0}). لو العداد اتغير، أنشئ عداد جديد.
+The record this charge came from.,السجل الذي جاء منه هذا البند.
+"The sales changed, so they are Declared again until checked.",المبيعات اتغيرت، فرجعت معلنة لحين المراجعة.
+The termination date must fall inside the lease,تاريخ الفسخ لازم يكون داخل مدة العقد
+This allocation was already billed,هذا التوزيع اتفوتر بالفعل
+This reading was billed on {0}. Cancel or delete that invoice first.,هذه القراءة اتفوترت في {0}. الغي أو امسح الفاتورة دي أولاً.
+This run is already invoiced,هذه الدورة اتفوترت بالفعل
+This unit appears in a lease and cannot be deleted. Set it inactive instead.,هذه الوحدة موجودة في عقد ولا يمكن حذفها. اجعلها غير نشطة بدلاً من ذلك.
+To,إلى
+To Month,إلى شهر
+Total Area (sqm),إجمالي المساحة (م²)
+Total Lettable Area (sqm),إجمالي المساحة القابلة للتأجير (م²)
+Total Owed,إجمالي المستحق
+Total to Bill,الإجمالي المطلوب فوترته
+Totals (calculated),الإجماليات (محسوبة)
+Turnover Rent,إيجار النسبة
+Turnover Rent Item,صنف إيجار النسبة
+Turnover Rent Only on Verified Sales,إيجار النسبة على المبيعات الموثقة فقط
+Turnover rent {0}% of sales {1} ({2}),إيجار نسبة {0}% من مبيعات {1} ({2})
+"Type it, or press Load Expenses to read the mall's expense accounts.",اكتبها، أو اضغط تحميل المصاريف لقراءتها من حسابات مصاريف المول.
+Unbilled Meter Readings,قراءات عدادات غير مفوترة
+Unit,وحدة
+Unit No.,رقم الوحدة
+Unit {0} belongs to another mall,الوحدة {0} تابعة لمول آخر
+Unit {0} is already leased in these dates by {1},الوحدة {0} مؤجرة بالفعل في هذه التواريخ بالعقد {1}
+Unit {0} is listed twice,الوحدة {0} مكررة
+Unit {0} is not active,الوحدة {0} غير نشطة
+Units,الوحدات
+Units by Status,الوحدات حسب الحالة
+Upcoming,قادم
+Utilities,المرافق
+Utilities Item,صنف المرافق
+Utility,المرفق
+Utility Meter,عداد مرافق
+Vacant,شاغر
+Vacant (sqm),الشاغر (م²)
+Vacant Units,وحدات شاغرة
+Vacant or Reserved Units,وحدات شاغرة أو محجوزة
+Verified,موثق
+Verified sales can only be changed by a mall manager or accountant,المبيعات الموثقة لا يغيرها إلا مدير المول أو المحاسب
+View,عرض
+Visitors,الزوار
+Warn About Leases Ending Within (days),تنبيه للعقود التي تنتهي خلال (يوم)
+Water,مياه
+Yearly Rent Increase %,زيادة الإيجار السنوية %
+Yearly Service Charge Increase %,زيادة مصاريف الخدمات السنوية %
+{0} ({1}) was already invoiced for {2} in {3}: skipped.,{0} ({1}) اتفوتر بالفعل عن {2} في {3}: تم التخطي.
+{0} charge lines,{0} بند
+{0} invoices submitted,تم اعتماد {0} فاتورة
+{0} is outside the lease dates,{0} خارج تواريخ العقد
+{0} leases share the expenses,{0} عقد يتشاركوا المصاريف
+{0} must be between 0 and 100,{0} لازم تكون بين 0 و 100
+{0} {1}: {2} units,{0} {1}: {2} وحدة
+"{0}: no sales entered for {1}, so no turnover rent was calculated.",{0}: لم تُدخل مبيعات {1}، فلم يُحسب إيجار النسبة.
+{0}: turnover rent {1} left unticked because the sales are not verified.,{0}: إيجار النسبة {1} متساب غير محدد لأن المبيعات لم تُوثق.
+{0}: {1} tenants on turnover rent have not reported sales for {2}.,{0}: {1} مستأجر بنسبة لم يبلغوا عن مبيعات {2}.

@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_no",
+  "mall",
+  "floor",
+  "category",
+  "cb1",
+  "area_sqm",
+  "list_rent_sqm",
+  "is_anchor",
+  "active",
+  "sb_s",
+  "status",
+  "current_lease",
+  "current_tenant",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_no",
+   "fieldtype": "Data",
+   "label": "Unit No.",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "mall",
+   "fieldtype": "Link",
+   "label": "Mall",
+   "options": "Mall",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Link",
+   "label": "Floor",
+   "options": "Mall Floor",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Mall Category",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_sqm",
+   "fieldtype": "Float",
+   "label": "Area (sqm)",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "list_rent_sqm",
+   "fieldtype": "Currency",
+   "label": "Asking Rent per sqm per Month"
+  },
+  {
+   "fieldname": "is_anchor",
+   "fieldtype": "Check",
+   "label": "Anchor Store"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": 1
+  },
+  {
+   "fieldname": "sb_s",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Vacant\nReserved\nOccupied\nFit-out\nMaintenance",
+   "default": "Vacant",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "description": "Occupied and Fit-out follow the lease; the rest you set."
+  },
+  {
+   "fieldname": "current_lease",
+   "fieldtype": "Link",
+   "label": "Current Lease",
+   "options": "Mall Lease",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_tenant",
+   "fieldtype": "Link",
+   "label": "Current Tenant",
+   "options": "Mall Tenant",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Mall Unit",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Leasing Officer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Mall Operations",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:{mall}-{unit_no}",
+ "title_field": "unit_no",
+ "icon": "fa fa-th-large",
+ "search_fields": "unit_no,mall",
+ "track_changes": 1,
+ "allow_rename": 0
+}

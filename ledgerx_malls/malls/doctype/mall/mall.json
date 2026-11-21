@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mall_name",
+  "company",
+  "active",
+  "cb1",
+  "cost_center",
+  "manager",
+  "manager_user",
+  "sb_a",
+  "city",
+  "address",
+  "opening_date",
+  "sb_t",
+  "total_gla",
+  "occupied_area",
+  "occupancy_pct"
+ ],
+ "fields": [
+  {
+   "fieldname": "mall_name",
+   "fieldtype": "Data",
+   "label": "Mall Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "description": "Income and costs of this mall are reported here."
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Link",
+   "label": "Mall Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "manager_user",
+   "fieldtype": "Data",
+   "label": "Manager User",
+   "read_only": 1,
+   "fetch_from": "manager.user_id"
+  },
+  {
+   "fieldname": "sb_a",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "opening_date",
+   "fieldtype": "Date",
+   "label": "Opening Date"
+  },
+  {
+   "fieldname": "sb_t",
+   "fieldtype": "Section Break",
+   "label": "Totals (calculated)"
+  },
+  {
+   "fieldname": "total_gla",
+   "fieldtype": "Float",
+   "label": "Total Lettable Area (sqm)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "occupied_area",
+   "fieldtype": "Float",
+   "label": "Occupied Area (sqm)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "occupancy_pct",
+   "fieldtype": "Percent",
+   "label": "Occupancy %",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Mall",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Leasing Officer",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Mall Operations",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "field:mall_name",
+ "title_field": "mall_name",
+ "icon": "fa fa-building",
+ "allow_rename": 0
+}

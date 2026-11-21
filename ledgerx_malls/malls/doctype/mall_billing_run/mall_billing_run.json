@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mall",
+  "billing_month",
+  "posting_date",
+  "cb1",
+  "bill_turnover",
+  "bill_utilities",
+  "bill_cam",
+  "bill_late_fees",
+  "sb_l",
+  "lines",
+  "sb_r",
+  "status",
+  "total_amount",
+  "invoices_made",
+  "notes_html",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "mall",
+   "fieldtype": "Link",
+   "label": "Mall",
+   "options": "Mall",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "billing_month",
+   "fieldtype": "Date",
+   "label": "Month to Bill",
+   "reqd": 1,
+   "in_list_view": 1,
+   "description": "Any day of the month: rent and service charge are billed for this month."
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bill_turnover",
+   "fieldtype": "Check",
+   "label": "Add Turnover Rent of the Previous Month",
+   "default": 1
+  },
+  {
+   "fieldname": "bill_utilities",
+   "fieldtype": "Check",
+   "label": "Add Meter Readings Not Yet Billed",
+   "default": 1
+  },
+  {
+   "fieldname": "bill_cam",
+   "fieldtype": "Check",
+   "label": "Add Expense Recovery Not Yet Billed",
+   "default": 1
+  },
+  {
+   "fieldname": "bill_late_fees",
+   "fieldtype": "Check",
+   "label": "Add Late Fees",
+   "default": 1
+  },
+  {
+   "fieldname": "sb_l",
+   "fieldtype": "Section Break",
+   "label": "Charges"
+  },
+  {
+   "fieldname": "lines",
+   "fieldtype": "Table",
+   "label": "Charges",
+   "options": "Billing Line"
+  },
+  {
+   "fieldname": "sb_r",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPrepared\nInvoiced",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total to Bill",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "invoices_made",
+   "fieldtype": "Small Text",
+   "label": "Invoices Created",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes_html",
+   "fieldtype": "Text Editor",
+   "label": "Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "fetch_from": "mall.company"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Mall Billing Run",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Mall Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Mall Accountant",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:MBR-.YYYY.-.#####",
+ "icon": "fa fa-calculator",
+ "track_changes": 1,
+ "allow_rename": 0
+}

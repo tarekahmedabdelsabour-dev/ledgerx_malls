@@ -1,0 +1,411 @@
+{
+ "charts": [
+  {
+   "chart_name": "Units by Status",
+   "label": "Units by Status"
+  },
+  {
+   "chart_name": "Leases by Rent Model",
+   "label": "Leases by Rent Model"
+  }
+ ],
+ "content": "[{\"id\": \"9c7a9bbe4d\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Malls</b></span>\", \"col\": 12}}, {\"id\": \"8953149240\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Mall Lease\", \"col\": 3}}, {\"id\": \"938629cf69\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Mall Billing Run\", \"col\": 3}}, {\"id\": \"476437880d\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Tenant Sales\", \"col\": 3}}, {\"id\": \"6f8b735b4b\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Meter Reading\", \"col\": 3}}, {\"id\": \"ac994872c7\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Vacant Units\", \"col\": 3}}, {\"id\": \"05ace0e512\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Leases Active\", \"col\": 3}}, {\"id\": \"1693169682\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Leases Ending in 6 Months\", \"col\": 3}}, {\"id\": \"d1fab30f15\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Sales Awaiting Verification\", \"col\": 3}}, {\"id\": \"c1e824e7fa\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Billing Runs to Invoice\", \"col\": 3}}, {\"id\": \"ab2f1930d6\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Unbilled Meter Readings\", \"col\": 3}}, {\"id\": \"e0fd1c99bb\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Units by Status\", \"col\": 6}}, {\"id\": \"1a4370d452\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Leases by Rent Model\", \"col\": 6}}, {\"id\": \"be1123663c\", \"type\": \"card\", \"data\": {\"card_name\": \"Leasing\", \"col\": 4}}, {\"id\": \"e92133528f\", \"type\": \"card\", \"data\": {\"card_name\": \"Billing\", \"col\": 4}}, {\"id\": \"5cebfcef0d\", \"type\": \"card\", \"data\": {\"card_name\": \"Operations\", \"col\": 4}}, {\"id\": \"6e7adf5e22\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"4f1aa6c762\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}, {\"id\": \"dd13417c1c\", \"type\": \"card\", \"data\": {\"card_name\": \"Source Data\", \"col\": 4}}]",
+ "creation": "2026-11-22 09:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "building",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "Malls",
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "Leasing",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Mall Lease",
+   "link_type": "DocType",
+   "link_to": "Mall Lease",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Mall Unit",
+   "link_type": "DocType",
+   "link_to": "Mall Unit",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Mall Tenant",
+   "link_type": "DocType",
+   "link_to": "Mall Tenant",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Billing",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 5,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Mall Billing Run",
+   "link_type": "DocType",
+   "link_to": "Mall Billing Run",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Tenant Sales",
+   "link_type": "DocType",
+   "link_to": "Tenant Sales",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "CAM Allocation",
+   "link_type": "DocType",
+   "link_to": "CAM Allocation",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Sales Invoice",
+   "link_type": "DocType",
+   "link_to": "Sales Invoice",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Payment Entry",
+   "link_type": "DocType",
+   "link_to": "Payment Entry",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Operations",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Meter Reading",
+   "link_type": "DocType",
+   "link_to": "Meter Reading",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Utility Meter",
+   "link_type": "DocType",
+   "link_to": "Utility Meter",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Footfall",
+   "link_type": "DocType",
+   "link_to": "Footfall",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Reports",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 7,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Rent Roll",
+   "link_type": "Report",
+   "link_to": "Rent Roll",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Occupancy",
+   "link_type": "Report",
+   "link_to": "Occupancy",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Tenant Aging",
+   "link_type": "Report",
+   "link_to": "Tenant Aging",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Tenant Sales Performance",
+   "link_type": "Report",
+   "link_to": "Tenant Sales Performance",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Lease Expiry",
+   "link_type": "Report",
+   "link_to": "Lease Expiry",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Footfall and Sales",
+   "link_type": "Report",
+   "link_to": "Footfall and Sales",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Billing and Collection",
+   "link_type": "Report",
+   "link_to": "Billing and Collection",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Setup",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 4,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Mall",
+   "link_type": "DocType",
+   "link_to": "Mall",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Mall Floor",
+   "link_type": "DocType",
+   "link_to": "Mall Floor",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Mall Category",
+   "link_type": "DocType",
+   "link_to": "Mall Category",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Mall Settings",
+   "link_type": "DocType",
+   "link_to": "Mall Settings",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Source Data",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Customer",
+   "link_type": "DocType",
+   "link_to": "Customer",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Item",
+   "link_type": "DocType",
+   "link_to": "Item",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Employee",
+   "link_type": "DocType",
+   "link_to": "Employee",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  }
+ ],
+ "title": "Malls",
+ "modified": "2026-11-22 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Malls",
+ "name": "Malls",
+ "number_cards": [
+  {
+   "label": "Vacant Units",
+   "number_card_name": "Vacant Units"
+  },
+  {
+   "label": "Leases Active",
+   "number_card_name": "Leases Active"
+  },
+  {
+   "label": "Leases Ending in 6 Months",
+   "number_card_name": "Leases Ending in 6 Months"
+  },
+  {
+   "label": "Sales Awaiting Verification",
+   "number_card_name": "Sales Awaiting Verification"
+  },
+  {
+   "label": "Billing Runs to Invoice",
+   "number_card_name": "Billing Runs to Invoice"
+  },
+  {
+   "label": "Unbilled Meter Readings",
+   "number_card_name": "Unbilled Meter Readings"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 32.0,
+ "shortcuts": [
+  {
+   "label": "Mall Lease",
+   "link_to": "Mall Lease",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Mall Billing Run",
+   "link_to": "Mall Billing Run",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Tenant Sales",
+   "link_to": "Tenant Sales",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Meter Reading",
+   "link_to": "Meter Reading",
+   "type": "DocType",
+   "doc_view": "List"
+  }
+ ]
+}
