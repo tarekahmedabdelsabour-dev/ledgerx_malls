@@ -167,5 +167,6 @@
  ],
  "autoname": "format:TSL-.YYYY.-.#####",
  "icon": "fa fa-line-chart",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }

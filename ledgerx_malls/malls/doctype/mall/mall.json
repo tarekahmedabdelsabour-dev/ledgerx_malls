@@ -167,5 +167,6 @@
  "autoname": "field:mall_name",
  "title_field": "mall_name",
  "icon": "fa fa-building",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }

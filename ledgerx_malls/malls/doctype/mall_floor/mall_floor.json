@@ -81,5 +81,6 @@
  ],
  "autoname": "format:{mall}-{floor_name}",
  "title_field": "floor_name",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }

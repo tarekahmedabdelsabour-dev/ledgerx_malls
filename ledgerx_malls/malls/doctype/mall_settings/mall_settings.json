@@ -177,5 +177,6 @@
  ],
  "icon": "fa fa-building",
  "issingle": 1,
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }
