@@ -18,7 +18,7 @@ class MallBillingRun(Document):
 		self.total_amount = round(sum(flt(l.amount) for l in self.lines if l.include), 2)
 
 	# ------------------------------------------------------------------ prepare
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def prepare(self):
 		"""Works out every charge of the month for the mall's leases. Nothing is invoiced yet: review the lines, untick or change what you need."""
 		self.check_permission("write")
@@ -102,7 +102,7 @@ class MallBillingRun(Document):
 				self._add(l, "Late Fee", _("Late fee on {0} through {1}").format(inv.name, through), fee, source=f"{inv.name}|{through}")
 
 	# ------------------------------------------------------------------ invoices
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def create_invoices(self):
 		"""One draft Sales Invoice per lease. Drafts leave room for a last look; submit them from the Submit Invoices button."""
 		self.check_permission("write")
@@ -160,7 +160,7 @@ class MallBillingRun(Document):
 		self.save()
 		return made
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def submit_invoices(self):
 		self.check_permission("write")
 		n = 0

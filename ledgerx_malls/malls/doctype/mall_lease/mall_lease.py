@@ -66,9 +66,10 @@ class MallLease(Document):
 			data.sync_unit(u.unit)
 		data.update_mall_totals(self.mall)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def terminate(self, date, reason=None):
 		"""Ends the lease on a given date. Billing stops after that day; the units are released once the date has passed."""
+		self.check_permission("write")
 		self.check_permission("submit")
 		if self.docstatus != 1:
 			frappe.throw(_("Only a submitted lease can be terminated"))
@@ -80,9 +81,10 @@ class MallLease(Document):
 		self._sync()
 		return self.lease_status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def renew(self, years=1, rent_increase_pct=0):
 		"""A draft renewal starting the day after this lease ends, with the same terms and a new rent."""
+		self.check_permission("write")
 		self.check_permission("create")
 		new = frappe.copy_doc(self)
 		new.renewed_from = self.name

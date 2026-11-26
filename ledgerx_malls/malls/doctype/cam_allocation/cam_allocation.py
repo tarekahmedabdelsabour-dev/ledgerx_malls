@@ -14,7 +14,7 @@ class CAMAllocation(Document):
 		if flt(self.total_expense) < 0:
 			frappe.throw(_("Expenses cannot be negative"))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def load_expenses(self):
 		"""Sum of the expense postings of the mall's cost center in the period."""
 		self.check_permission("write")
@@ -30,7 +30,7 @@ class CAMAllocation(Document):
 		self.save()
 		return self.total_expense
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def allocate(self):
 		"""Splits the expenses by leased area x days in force, so a tenant who stayed half the period pays half the share."""
 		self.check_permission("write")
