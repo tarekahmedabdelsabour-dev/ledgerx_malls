@@ -106,8 +106,9 @@ class MallBillingRun(Document):
 	def create_invoices(self):
 		"""One draft Sales Invoice per lease. Drafts leave room for a last look; submit them from the Submit Invoices button."""
 		self.check_permission("write")
-		if self.status != "Prepared":
-			frappe.throw(_("Prepare the run first"))
+		if frappe.db.get_value("Mall Billing Run", self.name, "status", for_update=True) != "Prepared":
+			frappe.throw(_("Prepare the run first, or it is already invoiced"))
+		self.status = "Prepared"
 		s = data.settings()
 		for kind, fld in ITEM_FIELD.items():
 			if any(l.include and l.charge_type == kind and flt(l.amount) > 0 for l in self.lines) and not s.get(fld):
@@ -163,9 +164,14 @@ class MallBillingRun(Document):
 	@frappe.whitelist(methods=["POST"])
 	def submit_invoices(self):
 		self.check_permission("write")
+		if self.status != "Invoiced":
+			frappe.throw(_("Create the invoices first"))
 		n = 0
 		for name in (self.invoices_made or "").split("\n"):
 			if name and frappe.db.get_value("Sales Invoice", name, "docstatus") == 0:
-				frappe.get_doc("Sales Invoice", name).submit()
+				try:
+					frappe.get_doc("Sales Invoice", name).submit()
+				except Exception as e:
+					frappe.throw(_("Invoice {0} could not be submitted: {1}. Nothing was submitted.").format(name, str(e)[:300]))
 				n += 1
 		return n
